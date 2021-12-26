@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Pizzaria Gosto Perfeito</title>
+</head>
+<body>
+  <header>
+    <h1>Pizzaria Gosto Perfeito</h1>
+  </header>
+  <main>
+    <section class="containerCadastro">
+      <h2>Cadastramendo De Pizza</h2>
+      <table>
+        <tr>
+          <th>Nome da Pizza</th>
+          <th>Ingredientes</th>
+        </tr>
+        <tr>
+          <td>Pizza de Atum</td>
+          <td>Atum, Massa de pizza, Cebola.</td>
+        </tr>
+        <tr>
+          <td>Pizza de Frango</td>
+          <td>Frango Desfiado, Massa de pizza, batata palha.</td>
+        </tr>
+      </table>
+      <button id="addPizza">Cadastrar Pizza</button>
+      <button id="delPizza">Remover Pizza</button>
+    </section>
+    <div class="bgPizza">
+      <div class="containerPizza">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Cadastrar nova Pizza</legend>
+            <div>
+              <p>Pizza</p>
+              <input type="text" id="cadastroPizza">
+              <label for="cadastroPizza"></label>
+            </div>
+
+            <div>
+              <p>Ingredientes</p>
+              <input type="text" id="cadastroIngrediente">
+              <label for="cadastroIngrediente"></label>
+            </div>
+
+            <button class="btCadPizza">Cadastrar</button>
+            <button class="btCancelar">Cancelar</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
