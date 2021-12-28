@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/styles/style.css">
+
+  <script src="modal.js" defer></script>
   <title>Pizzaria Gosto Perfeito</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
           <td>Frango Desfiado, Massa de pizza, batata palha.</td>
         </tr>
       </table>
-      <button id="addPizza">Cadastrar Pizza</button>
+      <button id="addPizza" onclick="openModal()">Cadastrar Pizza</button>
       <button id="delPizza">Remover Pizza</button>
     </section>
     <div class="bgPizza">
@@ -39,17 +41,17 @@
             <legend>Cadastrar nova Pizza</legend>
             <div>
               <p>Pizza</p>
-              <input type="text" id="cadastroPizza">
               <label for="cadastroPizza"></label>
+              <input type="text" id="cadastroPizza" required>
             </div>
 
             <div>
               <p>Ingredientes</p>
-              <input type="text" id="cadastroIngrediente">
               <label for="cadastroIngrediente"></label>
+              <input type="text" id="cadastroIngrediente" required>
             </div>
 
-            <button class="btCadPizza">Cadastrar</button>
+            <button class="btCadPizza" type="submit">Cadastrar</button>
             <button class="btCancelar">Cancelar</button>
           </fieldset>
         </form>
