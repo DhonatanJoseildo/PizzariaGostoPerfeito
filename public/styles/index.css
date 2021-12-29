@@ -119,3 +119,6 @@ td{
 .bgPizza .containerPizza .btCadPizza{
   margin-right: 1rem;
 }
+.btCadPizza, .btCancelar{
+  cursor: pointer;
+}

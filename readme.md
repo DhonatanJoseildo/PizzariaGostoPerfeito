@@ -15,3 +15,11 @@
 
 ## Update 1.0.1
 - implementado abertura da modal para cadastro de pizza.
+
+## Update 1.1.0
+- criado um servidor em nodeJS
+- ultilizamos node / express.
+- criada rotas do servidor
+- feita a divisão de arquivos publicos e servidor.
+- modificada a estrutura html para ejs.
+- adicionamos devDependecies: nodemon.

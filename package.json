@@ -1,0 +1,28 @@
+{
+  "name": "PizzariaGostoPerfeito",
+  "version": "1.0.0",
+  "description": "nome do projeto Pizzaria Gosto Perfeito",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DhonatanJoseildo/PizzariaGostoPerfeito.git"
+  },
+  "author": "Dhonatan Joseildo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DhonatanJoseildo/PizzariaGostoPerfeito/issues"
+  },
+  "homepage": "https://github.com/DhonatanJoseildo/PizzariaGostoPerfeito#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
