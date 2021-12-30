@@ -2,9 +2,10 @@
   "name": "PizzariaGostoPerfeito",
   "version": "1.0.0",
   "description": "nome do projeto Pizzaria Gosto Perfeito",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "repository": {
     "type": "git",

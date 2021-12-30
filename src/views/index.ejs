@@ -36,19 +36,19 @@
     </section>
     <div class="bgPizza">
       <div class="containerPizza">
-        <form action="#" method="post">
+        <form action="/index" method="POST">
           <fieldset>
             <legend>Cadastrar nova Pizza</legend>
             <div>
               <p>Pizza</p>
               <label for="cadastroPizza"></label>
-              <input type="text" id="cadastroPizza" required>
+              <input type="text" id="cadastroPizza" required name="name-pizza">
             </div>
 
             <div>
               <p>Ingredientes</p>
               <label for="cadastroIngrediente"></label>
-              <input type="text" id="cadastroIngrediente" required>
+              <input type="text" id="cadastroIngrediente" required name="name-ingredientes">
             </div>
 
             <button class="btCadPizza" type="submit">Cadastrar</button>
