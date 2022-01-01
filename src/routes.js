@@ -1,9 +1,9 @@
 const express = require('express');
+const route = express.Router();
+
 const PizzaController = require('./controllers/PizzaController');
 
-const routes = express.Router();
+route.get('/', PizzaController.show);
+route.post('/index', PizzaController.save);
 
-routes.get('/', (req, res) => res.render("index"));
-routes.post('/index', PizzaController.save);
-
-module.exports = routes;
+module.exports = route;

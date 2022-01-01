@@ -19,17 +19,17 @@
       <h2>Cadastramendo De Pizza</h2>
       <table>
         <tr>
+          <th>ID</th>
           <th>Nome da Pizza</th>
           <th>Ingredientes</th>
         </tr>
-        <tr>
-          <td>Pizza de Atum</td>
-          <td>Atum, Massa de pizza, Cebola.</td>
-        </tr>
-        <tr>
-          <td>Pizza de Frango</td>
-          <td>Frango Desfiado, Massa de pizza, batata palha.</td>
-        </tr>
+        <% pizzas.forEach((element) => { %>
+          <tr data-id="<%= element.id %>">
+            <td><%= element.id %></td>
+            <td><%= element.name %></td>
+            <td><%= element.ingredientes %></td>
+          </tr>
+        <% })%>
       </table>
       <button id="addPizza" onclick="openModal()">Cadastrar Pizza</button>
       <button id="delPizza">Remover Pizza</button>

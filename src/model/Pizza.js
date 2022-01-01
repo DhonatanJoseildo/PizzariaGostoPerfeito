@@ -1,20 +1,22 @@
-const Database = require('../db/config')
+const Database = require('../db/config');
 
 module.exports = {
   async get(){
-    const db = await Database()
+    const db = await Database();
 
     // pegar todos as pizzas
-    const pizzas = await db.all(`SELECT * FROM pizzas`)
+    const pizzas = await db.all(`SELECT * FROM pizzas`);
 
-    db.close()
-    return pizzas.map(pizza => ({
+    await db.close();
+
+    return pizzas.map((pizza) => ({
       id: pizza.id,
-      pizza: pizza.pizza,
+      name: pizza.pizza,
       ingredientes: pizza.ingredientes
-    }))
+    }));
     
   },
+
   async create(newPizza){
     const db = await Database()
 

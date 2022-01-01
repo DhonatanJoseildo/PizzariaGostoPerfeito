@@ -13,10 +13,9 @@ module.exports = {
   },
 
   async show(req, res){
-    const pizzas = await Pizza.get()
-    const pizzaId = req.params.id
-    const ingredientes = pizzas.ingredientes
-
+    const pizzas01 = await Pizza.get()
+    
+    return res.render("index", {pizzas: pizzas01})
   }
   
 }
