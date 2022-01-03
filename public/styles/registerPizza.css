@@ -1,0 +1,28 @@
+
+body{
+  text-align: center;
+}
+h1{
+  font-size: 50px;
+}
+label{
+  font-size: 30px;
+}
+input{
+  font-size: 20px;
+  
+}
+form a {
+  text-decoration: none;
+}
+.btCadPizza, .cancel{
+  font-size: 30px;
+  padding: 7px;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid rgb(118, 118, 118);
+  color: rgb(19, 19, 19);
+  
+}

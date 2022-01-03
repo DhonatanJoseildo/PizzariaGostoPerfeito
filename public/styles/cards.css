@@ -1,0 +1,58 @@
+/*=========== CARDS ===========*/
+
+.card {
+  display: grid;
+  grid-template-columns: 5% 35% 20% 20% 20%;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  transition: all .2s;
+
+  background-color: var(--color-text);
+  border-radius: 0.5rem;
+  border: 1px solid #E1E3E6;
+  color: #5a5a66;
+  padding: 2.4rem;
+  text-align: left;
+}
+
+.card:hover{
+  background: linear-gradient(90deg, rgba(250,156,45, 0.1) 0.45,rgba(252, 253, 255, 0.1) 31.4%), white;
+}
+.card::before {
+  content: ' ';
+
+  width: .4rem;
+  height: 0%;
+  background-color: var(--color-secondary);
+
+  border-radius: .5rem 0 0 .5rem;
+
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  transition: all .2s;
+}
+.card:hover::before{
+  height: 100%;
+}
+.cadastroId, .amount{
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  color: var(--color-card-label);
+  font-size: 2.4rem;
+}
+.namePizza, .nameIngredientes{
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+.actionsButtonRight button img, .actionsButtonRight a img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.actionsButtonRight a + button{
+  cursor: pointer;
+}

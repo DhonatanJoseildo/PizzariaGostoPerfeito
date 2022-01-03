@@ -6,6 +6,12 @@
   --background: rgb(250, 250, 250);
   --bg-modal: rgba(0, 0, 0, 0.8);
   --button-cadastro: rgb(126, 125, 125);
+
+  --color-text: #FCFDFF;
+  --color-secondary: #F1972C;
+  --color-card-label:#BFBFCC;
+
+
   font-size: 62.25%;
 }
 
@@ -14,40 +20,33 @@ body{
   background-color: var(--background);
 }
 h1{
-  font-size: 34px;
+  font-size: 4rem;
   padding: 4rem;
 }
-/*=========== TABLE ==========*/
-table{
-  width: 60vw;
-  
+.container{
+  width: min(1440px, 90vw);
+  margin: 0 auto;
 }
-.containerCadastro h2{
-  font-size: 28px;
-  padding-bottom: 2rem;
+.container h2{
+  font-size: 3.5rem;
 }
-table, th, td{
-  border: 1px solid black;
-  margin: auto;
-  padding: 1rem;
-}
-th{
-  font-size: 20px;
-}
-td{
-  font-size: 16px;
-}
+/*=========== BUTTON / Link =============*/
 
-/*=========== BUTTON =============*/
-
-#addPizza, #delPizza{
-  font-size: 20px;
+#registerPizza, #deletePizza{
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 1rem;
   cursor: pointer;
+  border: 1px solid var(--button-cadastro);
+  font-weight: 500;
+  font-size: 2rem;
+  background-color: rgb(204, 201, 201);
+  font-weight: 500;
 }
-
+#registerPizza{
+  text-decoration: none;
+  color: black;
+}
 /*======= MODAL CADASTRO DE PIZZA==========*/
 
 .bgPizza{

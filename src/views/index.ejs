@@ -6,33 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/cards.css">
+
+  <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+  />
 
   <script src="/scripts/modal.js" defer></script>
   <title>Pizzaria Gosto Perfeito</title>
 </head>
 <body>
   <header>
-    <h1>Pizzaria Gosto Perfeito</h1>
+    <div class="container">
+      <h1>Pizzaria Gosto Perfeito</h1>
+    </div>
   </header>
   <main>
-    <section class="containerCadastro">
-      <h2>Cadastramendo De Pizza</h2>
-      <table>
-        <tr>
-          <th>ID</th>
-          <th>Nome da Pizza</th>
-          <th>Ingredientes</th>
-        </tr>
-        <% pizzas.forEach((element) => { %>
-          <tr data-id="<%= element.id %>">
-            <td><%= element.id %></td>
-            <td><%= element.name %></td>
-            <td><%= element.ingredientes %></td>
-          </tr>
-        <% })%>
-      </table>
-      <button id="addPizza" onclick="openModal()">Cadastrar Pizza</button>
-      <button id="delPizza">Remover Pizza</button>
+    <section class="container">
+      <h2>Cadastro de Pizza</h2>
+      <% pizzas.forEach((pizza) => { %>
+        <div class="card" data-id="<%= pizza.id %>">
+          <div class="cadastroId">
+            <%= pizza.id %>
+          </div>
+  
+          <div class="namePizza">
+            <%= pizza.name %> 
+          </div>
+          <div class="nameIngredientes">
+            <%= pizza.ingredientes %>
+          </div>
+          <div class="amount">
+            Valor: R$ 60,00
+          </div>
+          <div class="actionsButtonRight">
+            <a href="#" class="edit pizza">
+              <img src="/images/edit-pizza.svg" alt="Editar Pizza">
+            </a>
+            <button class="delete pizza" onclick="openModal()">
+              <img src="/images/delete-pizza.svg" alt="Excluir Pizza">
+            </button>
+          </div>
+        </div>
+      <%})%>  
+      <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
+      
     </section>
     <div class="bgPizza">
       <div class="containerPizza">

@@ -33,3 +33,9 @@
 ## Update 1.1.2
 - Adicionado Sistema para pegar dados do banco e renderizar no front-end.
 - Adicionado pequenas modificações.
+
+## Update 1.1.3
+- Adicionado icone de (edid / delete)
+- modificada estrutura do index removendo a table e estruturada em div.
+- Criada 2° pagina html Para Registro de dados(PIZZA).
+- Criada 2 arquivo css. 1 para a pagina de Registro e outro para os cards no Index.
