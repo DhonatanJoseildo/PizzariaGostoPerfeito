@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/styles/registerPizza.css">
+    <link rel="stylesheet" href="/styles/registerPizza.css" />
     <title>Cadastro de Pizza</title>
   </head>
   <body>
@@ -17,22 +17,39 @@
       <div class="container">
         <form action="/index" method="POST">
           <div class="content">
-            <label for="cadastroPizza">Nome da Pizza</label>
-            <input type="text" id="cadastroPizza" required name="name-pizza" />
+            <div>
+              <label for="cadastroPizza">Nome da Pizza</label>
+              <input
+                type="text"
+                id="cadastroPizza"
+                required
+                name="name-pizza"
+              />
+            </div>
 
-            <br>
+            <div>
+              <label for="cadastroIngrediente">Ingredientes</label>
+              <input
+                type="text"
+                id="cadastroIngrediente"
+                required
+                name="name-ingredientes"
+              />
+            </div>
 
-            <label for="cadastroIngrediente">Ingredientes</label>
-            <input
-              type="text"
-              id="cadastroIngrediente"
-              required
-              name="name-ingredientes"
-            />
+            <div>
+              <label for="CadastroValor">Valor R$</label>
+              <input
+                type="number"
+                id="CadastroValor"
+                required
+                name="name-valor"
+              />
+            </div>
+            <button class="btCadPizza" type="submit">Cadastrar</button>
+            <a class="cancel" href="/">Cancelar</a>
           </div>
 
-          <button class="btCadPizza" type="submit">Cadastrar</button>
-          <a class="cancel" href="/">Cancelar</a>
         </form>
       </div>
     </main>

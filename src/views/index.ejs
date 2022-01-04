@@ -24,7 +24,10 @@
   </header>
   <main>
     <section class="container">
-      <h2>Cadastro de Pizza</h2>
+      <div class="contentCadastro">
+        <h2>Cadastro de Pizza</h2>
+        <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
+      </div>
       <% pizzas.forEach((pizza) => { %>
         <div class="card" data-id="<%= pizza.id %>">
           <div class="cadastroId">
@@ -38,7 +41,8 @@
             <%= pizza.ingredientes %>
           </div>
           <div class="amount">
-            Valor: R$ 60,00
+            <p>Valor</p>
+            <p>R$ 60,00</p>
           </div>
           <div class="actionsButtonRight">
             <a href="#" class="edit pizza">
@@ -50,8 +54,7 @@
           </div>
         </div>
       <%})%>  
-      <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
-      
+
     </section>
     <div class="bgPizza">
       <div class="containerPizza">

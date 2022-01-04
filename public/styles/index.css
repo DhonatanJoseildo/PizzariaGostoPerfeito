@@ -31,21 +31,23 @@ h1{
   font-size: 3.5rem;
 }
 /*=========== BUTTON / Link =============*/
-
-#registerPizza, #deletePizza{
-  margin-top: 1rem;
+.contentCadastro{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+#registerPizza{
+  text-decoration: none;
   padding: 1rem;
   border-radius: 1rem;
   cursor: pointer;
   border: 1px solid var(--button-cadastro);
-  font-weight: 500;
   font-size: 2rem;
-  background-color: rgb(204, 201, 201);
-  font-weight: 500;
+  background-color: rgb(239, 239, 239);
+  color: rgb(26, 25, 25);
 }
-#registerPizza{
-  text-decoration: none;
-  color: black;
+#registerPizza:hover{
+  background-color: rgb(230, 230, 230);
 }
 /*======= MODAL CADASTRO DE PIZZA==========*/
 

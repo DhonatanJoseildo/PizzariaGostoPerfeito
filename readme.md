@@ -39,3 +39,9 @@
 - modificada estrutura do index removendo a table e estruturada em div.
 - Criada 2° pagina html Para Registro de dados(PIZZA).
 - Criada 2 arquivo css. 1 para a pagina de Registro e outro para os cards no Index.
+
+## Update 1.1.4
+- Ajustes no index
+- Ajustes nos Cards
+- Ajustes na pagina de cadastro.
+- Valores dos Produtos em fase de implementação.
