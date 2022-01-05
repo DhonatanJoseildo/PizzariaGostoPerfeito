@@ -5,7 +5,8 @@ module.exports = {
     await Pizza.create(
       {
         pizza: req.body["name-pizza"],
-        ingredientes: req.body["name-ingredientes"]
+        ingredientes: req.body["name-ingredientes"],
+        amount: req.body["name-valor"]
       }
     );
 
@@ -13,9 +14,35 @@ module.exports = {
   },
 
   async show(req, res){
-    const pizzas01 = await Pizza.get()
-    
-    return res.render("index", {pizzas: pizzas01})
-  }
+    const pizzas = await Pizza.get()
+    const pizzaId = req.params.id
+
+    const pizza = pizzas.find(pizza => Number(pizza.id) === Number(pizzaId))
+
+    if (!pizza) {
+      return res.send('Pizza NOT FOUND')
+    }
+
+    return res.render("pizzaEdit", {pizza})
+  },
   
+  async update(req, res){
+    const jobId = req.params.id
+    
+    const updatePizza = {
+      pizza: req.body["name-pizza"],
+      ingredientes: req.body["name-ingredientes"],
+      amount: req.body["name-valor"]
+    }
+    await Pizza.update(updatePizza, jobId)
+    res.redirect('/')
+  },
+
+  async delete(req, res){
+    const pizzaId = req.params.id
+
+    await Pizza.delete(pizzaId)
+
+    return res.redirect('/')
+  }
 }

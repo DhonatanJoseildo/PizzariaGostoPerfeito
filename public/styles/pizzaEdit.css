@@ -1,0 +1,61 @@
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.container .content{
+  position: relative;
+  top: 0;
+}
+.content form{
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content form fieldset{
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem;
+  text-align: left;
+}
+.content form legend{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.content form label, .content form input{
+  font-size: 2.5rem;
+  margin: 1rem 0 1rem;
+}
+.content form label{
+  margin-left: 2rem;
+}
+.content button.btCadPizza, .content a.cancel{
+  font-size: 30px;
+  padding: 7px;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid rgb(118, 118, 118);
+  color: rgb(19, 19, 19);
+  display: inline-block;
+  width: auto;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  margin-right: 2rem;
+}
+.content .actionsButton{
+  text-align: center;
+}
+.content a.cancel{
+  text-decoration: none;
+
+}
+

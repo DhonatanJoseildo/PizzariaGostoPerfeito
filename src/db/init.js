@@ -7,23 +7,28 @@ const initDb = {
     await db.exec(`CREATE TABLE pizzas (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       pizza TEXT,
-      ingredientes TEXT
+      ingredientes TEXT,
+      amount NUMBER
     )`);
 
     await db.run(`INSERT INTO pizzas (
       pizza,
-      ingredientes
+      ingredientes,
+      amount
     )VALUES (
       "Pizza de Atum",
-      "Atum, Massa de pizza, Cebola."
+      "Atum, Massa de pizza, Cebola.",
+      60.00
     )`);
 
     await db.run(`INSERT INTO pizzas (
       pizza,
-      ingredientes
+      ingredientes,
+      amount
     )VALUES (
       "Pizza de Frango",
-      "Frango desfiado, Massa de pizza, Batata palha."
+      "Frango desfiado, Massa de pizza, Batata palha.",
+      45.00
     )`);
     await db.close()
   }

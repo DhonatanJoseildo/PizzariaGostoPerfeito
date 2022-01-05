@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="/styles/index.css">
-  <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/cards.css" />
 
-  <link
+    <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-  />
+    />
 
-  <script src="/scripts/modal.js" defer></script>
-  <title>Pizzaria Gosto Perfeito</title>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Pizzaria Gosto Perfeito</h1>
-    </div>
-  </header>
-  <main>
-    <section class="container">
-      <div class="contentCadastro">
-        <h2>Cadastro de Pizza</h2>
-        <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
+    <script src="/scripts/index.js" defer type="module"></script>
+
+    <title>Pizzaria Gosto Perfeito</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Pizzaria Gosto Perfeito</h1>
       </div>
-      <% pizzas.forEach((pizza) => { %>
-        <div class="card" data-id="<%= pizza.id %>">
-          <div class="cadastroId">
-            <%= pizza.id %>
+    </header>
+    <main>
+      <section class="container">
+        <div class="contentCadastro">
+          <h2>Cadastro de Pizza</h2>
+          <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
+        </div>
+        <div class="cards">
+          <% pizzas.forEach((pizza) => { %>
+          <div class="card" data-id="<%= pizza.id %>">
+            <div class="cadastroId"><%= pizza.id %></div>
+
+            <div class="namePizza"><%= pizza.name %></div>
+            <div class="nameIngredientes"><%= pizza.ingredientes %></div>
+            <div class="amount">
+              <p>Valor</p>
+              <p><%= pizza.amount.toFixed(2).replace('.',',') %></p>
+            </div>
+            <div class="actionsButtonRight">
+              <a href="/registerPizza/<%= pizza.id %>" class="edit pizza">
+                <img src="/images/edit-pizza.svg" alt="Editar Pizza" />
+              </a>
+              <button class="delete pizza">
+                <img src="/images/delete-pizza.svg" alt="Excluir Pizza" />
+              </button>
+            </div>
           </div>
-  
-          <div class="namePizza">
-            <%= pizza.name %> 
-          </div>
-          <div class="nameIngredientes">
-            <%= pizza.ingredientes %>
-          </div>
-          <div class="amount">
-            <p>Valor</p>
-            <p>R$ 60,00</p>
-          </div>
-          <div class="actionsButtonRight">
-            <a href="#" class="edit pizza">
-              <img src="/images/edit-pizza.svg" alt="Editar Pizza">
-            </a>
-            <button class="delete pizza" onclick="openModal()">
-              <img src="/images/delete-pizza.svg" alt="Excluir Pizza">
+          <%})%>
+        </div>
+      </section>
+
+      <!--------------- modal exclusão --------------->
+      <div class="bgModal">
+        <div class="containerModal">
+          <div class="contentModal">
+            <h3>Excluir Pizza</h3>
+            <p>
+              Quer mesmo excluir essa pizza? <br />
+              Ela será apagado para sempre.
+            </p>
+
+            <p></p>
+
+            <button class="deletePizza" type="submit" form="delete-pizza">
+              Excluir Pizza
             </button>
+            <a href="/" class="cancelDelete">Cancelar</a>
+
+            <form
+              action="/registerPizza/delete"
+              method="POST"
+              id="delete-pizza"
+            ></form>
           </div>
         </div>
-      <%})%>  
-
-    </section>
-    <div class="bgPizza">
-      <div class="containerPizza">
-        <form action="/index" method="POST">
-          <fieldset>
-            <legend>Cadastrar nova Pizza</legend>
-            <div>
-              <p>Pizza</p>
-              <label for="cadastroPizza"></label>
-              <input type="text" id="cadastroPizza" required name="name-pizza">
-            </div>
-
-            <div>
-              <p>Ingredientes</p>
-              <label for="cadastroIngrediente"></label>
-              <input type="text" id="cadastroIngrediente" required name="name-ingredientes">
-            </div>
-
-            <button class="btCadPizza" type="submit">Cadastrar</button>
-            <button class="btCancelar">Cancelar</button>
-          </fieldset>
-        </form>
       </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>

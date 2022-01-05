@@ -5,53 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/registerPizza.css" />
     <title>Cadastro de Pizza</title>
   </head>
   <body>
-    <header>
-      <h1>Cadastrar Pizza</h1>
-    </header>
+    <div class="bg">
+      <header>
+        <h1>Cadastrar Pizza</h1>
+      </header>
 
-    <main>
-      <div class="container">
-        <form action="/index" method="POST">
-          <div class="content">
-            <div>
-              <label for="cadastroPizza">Nome da Pizza</label>
-              <input
-                type="text"
-                id="cadastroPizza"
-                required
-                name="name-pizza"
-              />
+      <main>
+        <div class="container">
+          <form action="/registerPizza" method="POST" id="form-pizza">
+            <div class="content">
+              <div>
+                <label for="cadastroPizza">Nome da Pizza</label>
+                <input
+                  type="text"
+                  id="cadastroPizza"
+                  required
+                  name="name-pizza"
+                />
+              </div>
+
+              <div>
+                <label for="cadastroIngrediente">Ingredientes</label>
+                <input
+                  type="text"
+                  id="cadastroIngrediente"
+                  required
+                  name="name-ingredientes"
+                />
+              </div>
+
+              <div>
+                <label for="CadastroValor">Valor R$</label>
+                <input
+                  type="number"
+                  id="CadastroValor"
+                  step="any"
+                  required
+                  name="name-valor"
+                />
+              </div>
+              <button class="btCadPizza" type="submit">Cadastrar</button>
+              <a class="cancel" href="/">Cancelar</a>
             </div>
-
-            <div>
-              <label for="cadastroIngrediente">Ingredientes</label>
-              <input
-                type="text"
-                id="cadastroIngrediente"
-                required
-                name="name-ingredientes"
-              />
-            </div>
-
-            <div>
-              <label for="CadastroValor">Valor R$</label>
-              <input
-                type="number"
-                id="CadastroValor"
-                required
-                name="name-valor"
-              />
-            </div>
-            <button class="btCadPizza" type="submit">Cadastrar</button>
-            <a class="cancel" href="/">Cancelar</a>
-          </div>
-
-        </form>
-      </div>
-    </main>
+          </form>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

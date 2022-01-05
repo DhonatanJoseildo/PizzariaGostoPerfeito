@@ -1,13 +1,26 @@
-const modal = document.querySelector('.bgPizza')
-const btCancelar = document.querySelector('.btCancelar')
+export default function Modal() {
+  const modal = document.querySelector('.bgModal')
+  const cancelButton = document.querySelector('a.cancelDelete')
 
-btCancelar.addEventListener('click', closeModal)
-function openModal() {
+  cancelButton.addEventListener('click', closeModal)
 
-  modal.classList.add('active')
-}
+  function openModal() {
+    document.addEventListener('keydown', closeOnEscape)
+    modal.classList.add('active')
+  }
 
-function closeModal(e) {
-  e.preventDefault()
-  modal.classList.remove('active')
+  function closeModal() {
+    document.removeEventListener('keydown', closeOnEscape)
+    modal.classList.remove('active')
+  }
+  function closeOnEscape({ key }) {
+    if (key == 'Escape') {
+      closeModal()
+    }
+  }
+
+  return {
+    openModal,
+    closeModal
+  }
 }

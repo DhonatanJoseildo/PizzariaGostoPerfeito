@@ -45,3 +45,11 @@
 - Ajustes nos Cards
 - Ajustes na pagina de cadastro.
 - Valores dos Produtos em fase de implementação.
+
+## Update 1.1.5
+- Implementado delete de dados/pizza.
+- Implementado Update/modificação de dados.
+- Implementado um controle para renderização no Index.
+- model modificado para exportação para melhor ultilização
+- Criado Index.js
+- Criado 2 novos .CSS para melhor controle e estilização.
