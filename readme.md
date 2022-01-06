@@ -53,3 +53,7 @@
 - model modificado para exportação para melhor ultilização
 - Criado Index.js
 - Criado 2 novos .CSS para melhor controle e estilização.
+
+## Update 1.1.6
+- Feito pequenas modificações na pagina de registro
+- Adicionado background nas paginas 

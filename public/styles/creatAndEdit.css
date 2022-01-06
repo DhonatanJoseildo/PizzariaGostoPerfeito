@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   margin: auto;
+  background: var(--background);
 }
 .container .content{
   position: relative;
@@ -24,6 +25,7 @@
   height: 80%;
   border-radius: 1rem;
   text-align: left;
+  background: rgb(250, 248, 224);
 }
 .content form legend{
   font-size: 4rem;
@@ -56,6 +58,5 @@
 }
 .content a.cancel{
   text-decoration: none;
-
 }
 

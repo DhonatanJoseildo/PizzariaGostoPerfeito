@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto de Cadastro de uma pizzaria">
+    <meta name="author" content="Dhonatan Joseildo">
 
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/index.css" />
@@ -31,26 +33,28 @@
           <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
         </div>
         <div class="cards">
+          <!---------------- CARDS DA PAGINA ------------->
           <% pizzas.forEach((pizza) => { %>
-          <div class="card" data-id="<%= pizza.id %>">
-            <div class="cadastroId"><%= pizza.id %></div>
+            <div class="card" data-id="<%= pizza.id %>">
+              <div class="cadastroId"><%= pizza.id %></div>
 
-            <div class="namePizza"><%= pizza.name %></div>
-            <div class="nameIngredientes"><%= pizza.ingredientes %></div>
-            <div class="amount">
-              <p>Valor</p>
-              <p><%= pizza.amount.toFixed(2).replace('.',',') %></p>
+              <div class="namePizza"><%= pizza.name %></div>
+              <div class="nameIngredientes"><%= pizza.ingredientes %></div>
+              <div class="amount">
+                <p>Valor</p>
+                <p><%= pizza.amount.toFixed(2).replace('.',',') %></p>
+              </div>
+              <div class="actionsButtonRight">
+                <a href="/registerPizza/<%= pizza.id %>" class="edit pizza">
+                  <img src="/images/edit-pizza.svg" alt="Editar Pizza" />
+                </a>
+                <button class="delete pizza">
+                  <img src="/images/delete-pizza.svg" alt="Excluir Pizza" />
+                </button>
+              </div>
             </div>
-            <div class="actionsButtonRight">
-              <a href="/registerPizza/<%= pizza.id %>" class="edit pizza">
-                <img src="/images/edit-pizza.svg" alt="Editar Pizza" />
-              </a>
-              <button class="delete pizza">
-                <img src="/images/delete-pizza.svg" alt="Excluir Pizza" />
-              </button>
-            </div>
-          </div>
           <%})%>
+
         </div>
       </section>
 

@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  --background: rgb(250, 250, 250);
+  --background: linear-gradient(90deg,rgb(248, 150, 37), rgb(250, 213, 3)50%,rgb(248, 150, 37));
   --bg-modal: rgba(0, 0, 0, 0.8);
   --button-cadastro: rgb(126, 125, 125);
 
@@ -16,5 +16,5 @@
 }
 body{
   text-align: center;
-  background-color: var(--background);
+  background: var(--background);
 }
