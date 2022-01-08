@@ -57,3 +57,6 @@
 ## Update 1.1.6
 - Feito pequenas modificações na pagina de registro
 - Adicionado background nas paginas 
+
+## Update 1.1.7
+- Criando Home page

@@ -4,6 +4,7 @@ const route = express.Router();
 
 const PizzaController = require('./controllers/PizzaController');
 
+route.get('/home', (req, res) => res.render('home'));
 route.get('/', DashBoardController.index);
 route.post('/registerPizza', PizzaController.save);
 route.get('/registerPizza/:id', PizzaController.show);

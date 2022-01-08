@@ -4,6 +4,8 @@
   box-sizing: border-box;
 
   --background: linear-gradient(90deg,rgb(248, 150, 37), rgb(250, 213, 3)50%,rgb(248, 150, 37));
+  --background-home:linear-gradient(90deg, rgb(248, 150, 37), rgb(250, 213, 3)70%);
+
   --bg-modal: rgba(0, 0, 0, 0.8);
   --button-cadastro: rgb(126, 125, 125);
 
