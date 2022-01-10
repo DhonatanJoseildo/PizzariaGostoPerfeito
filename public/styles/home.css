@@ -16,15 +16,107 @@ header .containerHeader .menu{
   height: 100%;
   align-items: center;
   justify-content: space-evenly;
-
+  font-weight: 700;
 }
 .containerHeader .menu a{
   text-decoration: none;
   color: rgb(206, 22, 22);
+  font-family: sans-serif;
 }
 header a{
   font-size: 3rem;
 }
 header h1{
   font-size: 5rem;
+}
+main{
+  position: relative;
+}
+body section{
+  position: absolute;
+  top: 320px;
+  right: 30px;
+}
+/*========== formulario ==========*/
+
+.containerLogin{
+  background: white;
+  border-radius: 0.5rem;
+  width: 31rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.20), 0 8px 16px rgb(0, 0, 0, 0.20);
+}
+.containerLogin p{
+  font-size: 2rem;
+  margin: 1rem 0 1rem;
+}
+.containerLogin .acessLogin input{
+  display: block;
+  font-size: 1.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgb(202, 201, 201);
+  margin-bottom: 1rem;
+}
+.containerLogin .acessLogin button{
+  font-size: 1.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgb(202, 201, 201);
+  width: 100%;
+  background-color: rgb(253, 30, 30);
+  color: white;
+  cursor: pointer;
+}
+.containerLogin .acessLogin button:hover{
+  background-color: rgb(253, 62, 62);
+}
+.containerLogin .changePwd{
+  margin-top: 1rem;
+}
+.containerLogin .createProfile{
+  font-size: 1.7rem;
+  border: 1px solid rgb(202, 201, 201);
+  border-radius: 0.6rem;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: .8rem 1rem;
+  background-color: rgb(23, 175, 23);
+  cursor: pointer;
+}
+.containerLogin .createProfile:hover{
+  background-color: rgb(26, 185, 26);
+}
+.containerLogin .createProfile a{
+  color: white;
+
+}
+.createProfile a, .changePwd a{
+  text-decoration: none;
+  font-size: 2rem;
+}
+.containerLogin .separator{
+  border-bottom: 1px solid #dadde1;
+  align-items: center;
+  font-family: inherit;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0 2rem;
+}
+
+/*============ SOCIAL MIDIA ==============*/
+.socialMidia{
+  margin-top: 1rem;
+}
+
+.socialMidia p{
+  font-size: 2rem;
+  color: rgb(206, 22, 22);
+}
+.socialMidia a img{
+  border-radius: 2.5rem;
 }

@@ -60,3 +60,7 @@
 
 ## Update 1.1.7
 - Criando Home page
+
+## Update 1.1.8
+- criada a interface de login no home
+- adicionados icones de social midia
