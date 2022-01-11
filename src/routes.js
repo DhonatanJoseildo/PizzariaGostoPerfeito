@@ -11,4 +11,6 @@ route.get('/registerPizza/:id', PizzaController.show);
 route.post('/registerPizza/:id', PizzaController.update);
 route.post('/registerPizza/delete/:id', PizzaController.delete);
 route.get('/registerPizza',(req, res) => res.render('registerPizza'));
+
+route.get('/home/registerProfile', (req, res) => res.render('registerProfile'));
 module.exports = route;

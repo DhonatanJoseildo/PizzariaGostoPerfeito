@@ -64,3 +64,6 @@
 ## Update 1.1.8
 - criada a interface de login no home
 - adicionados icones de social midia
+
+## Update 1.1.9
+- Criado a Pagina de Cadastro de login

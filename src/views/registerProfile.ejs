@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/registerProfile.css" />
+    <title>Registrar-se</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Cadastre-se</legend>
+
+            <div>
+              <label for="emailLogin">Email:</label>
+              <input type="email" name="email" id="emailLogin" />
+            </div>
+            <div>
+              <label for="pwdLogin">Password:</label>
+              <input type="password" name="password" id="pwdLogin" />
+            </div>
+            <div>
+              <label for="confirmPwd">Confirme Password:</label>
+              <input type="password" name="confirmPassword" id="confirmPwd" />
+            </div>
+            <div>
+              <label for="enderecoLogin">Endereço:</label>
+              <input type="text" name="endereco" id="enderecoLogin" />
+              <label for="numberEndereco">Nº</label>
+              <input type="number" name="numberEndereco" id="numberEndereco" maxlength="5"/>
+            </div>
+
+          </fieldset>
+          <div class="actionsButton">
+            <button type="submit" id="submitProfile">Enviar</button>
+            <a href="/home" class="cancelButton">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
