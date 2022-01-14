@@ -11,6 +11,9 @@
   </head>
   <body>
     <header>
+      <div class="users">
+        <p><%= profile.email %></p>
+      </div>
       <div class="containerHeader">
         <nav class="menu">
           <a href="#">HOME</a>
@@ -24,11 +27,11 @@
     <main>
       <section>
         <div class="containerLogin">
-          <form action="#" method="post">
+          <form action="/home/login" method="post">
             <p>Faça seu Login</p>
             <div class="acessLogin">
-              <input type="email" id="profileLogin" placeholder="E-mail">
-              <input type="password" id="profilePwd" placeholder="Senha">
+              <input type="email" id="profileLogin" placeholder="E-mail" name="email">
+              <input type="password" id="profilePwd" placeholder="Senha" name="password">
               <button class="Login" type="submit">Entrar</button>
             </div>
             <div class="changePwd">

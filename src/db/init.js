@@ -11,6 +11,14 @@ const initDb = {
       amount NUMBER
     )`);
 
+    await db.exec(`CREATE TABLE profiles(
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      email TEXT UNIQUE,
+      password TEXT,
+      endereco TEXT,
+      numberEndereco NUMBER
+    )`)
+    
     await db.run(`INSERT INTO pizzas (
       pizza,
       ingredientes,

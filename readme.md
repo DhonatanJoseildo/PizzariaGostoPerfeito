@@ -67,3 +67,8 @@
 
 ## Update 1.1.9
 - Criado a Pagina de Cadastro de login
+
+## Update 1.2.0
+- Criado toda estrutura do banco de dados para Criação de acconts
+- Criado a estrutura de requerimento do banco de dados para fazer authenticação do login.
+- Criado Pre-authenticação de login (seré melhorado brevemente)
