@@ -5,33 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/home.css" />
     <title>Home page</title>
   </head>
   <body>
-    <header>
-      <div class="users">
-        <p><%= profile.email %></p>
-      </div>
-      <div class="containerHeader">
-        <nav class="menu">
-          <a href="#">HOME</a>
-          <a href="#">MENU</a>
-          <a href="#">PROMOTIONS</a>
-          <a href="#">DELIVERY</a>
-        </nav>
-      </div>
-      <h1>Pizzaria Gosto Perfeito</h1>
-    </header>
+    <%- include('parts/header')%> 
     <main>
       <section>
         <div class="containerLogin">
           <form action="/home/login" method="post">
             <p>Faça seu Login</p>
             <div class="acessLogin">
-              <input type="email" id="profileLogin" placeholder="E-mail" name="email">
-              <input type="password" id="profilePwd" placeholder="Senha" name="password">
+              <input type="email" id="profileLogin" placeholder="E-mail" name="email" required>
+              <input type="password" id="profilePwd" placeholder="Senha" name="password" required>
               <button class="Login" type="submit">Entrar</button>
             </div>
             <div class="changePwd">

@@ -25,7 +25,7 @@ module.exports = {
 
     const profileEmail = req.body.email
     const profilePwd = req.body.password
-    
+
     const newprofile = profiles.find(profile => (profile.email === profileEmail) && (profile.password === profilePwd));
 
     if (!newprofile) {

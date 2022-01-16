@@ -1,4 +1,5 @@
 const express = require('express');
+const res = require('express/lib/response');
 const DashBoardController = require('./controllers/DashBoardController');
 const route = express.Router();
 
@@ -17,5 +18,8 @@ route.post('/home/login', ProfileController.enter);
 route.get('/home/registerProfile', (req, res) => res.render('registerProfile',{message:''}));
 route.post('/home/registerProfile', ProfileController.save);
 
+route.get('/home/menu', (req, res) => res.render('menu'));
+route.get('/home/promotions', (req, res) => res.render('promotions'))
+route.get('/home/delivery', (req, res) => res.render('delivery'))
 
 module.exports = route;

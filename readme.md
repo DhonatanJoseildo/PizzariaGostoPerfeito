@@ -71,4 +71,10 @@
 ## Update 1.2.0
 - Criado toda estrutura do banco de dados para Criação de acconts
 - Criado a estrutura de requerimento do banco de dados para fazer authenticação do login.
-- Criado Pre-authenticação de login (seré melhorado brevemente)
+- Criado Pre-authenticação de login (será melhorado brevemente)
+
+## Update 1.2.1
+- Feito Home Responsivo.
+- Criado a pagina de menu.
+- criado a pagina de promoção.
+- criado parts/header para melhor usabilidade.
