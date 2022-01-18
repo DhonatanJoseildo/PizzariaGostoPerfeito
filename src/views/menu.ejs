@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/styles/menu.css">
   <title>Menu</title>
@@ -12,8 +16,30 @@
 <body>
   <%- include('parts/header')%>
   <main>
-    <h1>Menu</h1>
-    <p>Temos varios tipos de Pizza</p>
+    <section class="container">
+      <div class="titleCards">
+        <h2>Temos varios tipos de Pizza</h2>
+      </div>
+      <div class="cards">
+        <% pizzas.forEach((pizza) => {%>
+          
+          <div class="card" data-id="<%= pizza.id %>">
+            <div class="cardId"><%= pizza.id %></div>
+            <div class="cardName"><%= pizza.name %></div>
+            <div class="cardIngrediente"><%= pizza.ingredientes %></div>
+            <div class="cardAmount">
+              <p>Valor</p>
+              <p>R$ <%= pizza.amount.toFixed(2).replace('.',',') %></p>
+            </div>
+  
+            <div class="actionsButton">
+              <button class="addOrder">Carrinho</button>
+              <button class="deleteOrder">Delete</button>
+            </div>
+          </div>
+        <%})%> 
+      </div>
+    </section>
   </main>
 </body>
 </html>

@@ -1,3 +1,73 @@
+body{
+  background: url('/images/backgroundMenu.jpg')no-repeat;
+  background-size: cover;
+}
 main{
-  font-size: 10rem;
+  margin-top: 3rem;
+  
+}
+main h2{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.container{
+  width: min(1440px, 90vw);
+  margin: auto;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  justify-items: stretch;
+}
+.card {
+  display: grid;
+  grid-template-columns: 5% 25% 45% 15% 10%;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  transition: all .2s;
+
+  background-color: var(--color-text);
+  border-radius: 0.5rem;
+  border: 1px solid #E1E3E6;
+  color: #5a5a66;
+  padding: 2.4rem;
+  text-align: center;
+  box-shadow: 1px 1px 4px black;
+}
+
+.card:hover {
+  background: linear-gradient(90deg, rgba(250, 154, 45, 0.253) 0.45%,rgba(252, 253, 255, 0.1) 31.4%), white;
+}
+.card::before {
+  content: ' ';
+
+  width: .4rem;
+  height: 0%;
+  background-color: rgb(255, 115, 0);
+
+  border-radius: .5rem 0 0 .5rem;
+
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  transition: all .2s;
+}
+.card:hover::before {
+  height: 100%;
+}
+.card p, .card div{
+  font-size: 2rem;
+}
+.card .cardIngrediente{
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards{
+    grid-template-columns: 100%;
+  }
 }

@@ -2,7 +2,7 @@ main{
   width: 100vw;
   height: 100vh;
   display: flex;
-
+  background: var(--background-home);
 }
 
 .container{
@@ -14,7 +14,7 @@ main{
 }
 .container form{
   background: white;
-  border-radius: 00.6rem;
+  border-radius: .6rem;
   border: 1px solid var(--button-cadastro);
   text-align: center;
   display: flex;
@@ -55,8 +55,7 @@ main{
   
   border: 1px solid var(--button-cadastro);
   font-size: 2rem;
-  background-color: rgb(239, 239, 239);
-  color: rgb(26, 25, 25);
+  color: white;
   font-family: sans-serif;
 
   width: 10.205rem;
@@ -67,6 +66,10 @@ main{
 #submitProfile{
   margin-right: 1rem;
   cursor: pointer;
+  background: rgb(12, 201, 12);
+}
+.cancelButton{
+  background: red;
 }
 .respostaMessage{
   font-size: 2rem;

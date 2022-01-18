@@ -1,11 +1,12 @@
 
 body{
-  background: url('/images/background.svg')no-repeat;
+  background: url('/images/backgroundHome.jpg')no-repeat;
   background-size: 100vw 100vh;
 }
 
 main{
   position: relative;
+
 }
 body section{
   position: absolute;

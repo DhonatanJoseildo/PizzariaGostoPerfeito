@@ -29,10 +29,11 @@ header .users{
   padding-right: 2rem;
 }
 /*========== Header ==========*/
+
 header .containerHeader{
   background: var(--background-home);
-  height: 11rem;
-  box-shadow: 0px 1px 14px 3px black;
+  height: 5rem;
+  box-shadow: 1px 1px 4px 1px black;
 }
 
 header .containerHeader .menu{
@@ -51,8 +52,8 @@ header .containerHeader .menu{
 header a{
   font-size: 3rem;
 }
-header #logo{
-  font-size: 8rem;
+header .logo #logo{
+  font-size: 10rem;
   font-family: 'Damion', cursive;
   color: rgb(253, 18, 18);
   text-shadow: 2px 2px 4px black;

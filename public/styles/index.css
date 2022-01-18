@@ -1,3 +1,6 @@
+body{
+  background: var(--background);
+}
 
 h1{
   font-size: 4rem;
