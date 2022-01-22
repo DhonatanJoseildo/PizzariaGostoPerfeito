@@ -15,6 +15,9 @@ body section{
   border-radius: 0.5rem;
 }
 
+header .logo #logo{
+  text-shadow: 2px 2px 4px black;
+}
 
 /*========== formulario ==========*/
 

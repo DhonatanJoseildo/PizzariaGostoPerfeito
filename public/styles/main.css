@@ -33,7 +33,7 @@ header .users{
 header .containerHeader{
   background: var(--background-home);
   height: 5rem;
-  box-shadow: 1px 1px 4px 1px black;
+  box-shadow: 1px 1px 4px 1px #f1972c;
 }
 
 header .containerHeader .menu{
@@ -56,5 +56,10 @@ header .logo #logo{
   font-size: 10rem;
   font-family: 'Damion', cursive;
   color: rgb(253, 18, 18);
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px rgb(250, 213, 3);
+}
+body.bg{
+  background: url('/images/backgroundMenu.jpg')no-repeat;
+  background-size: 100vw 100vh;
+
 }

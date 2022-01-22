@@ -1,10 +1,7 @@
-body{
-  background: url('/images/backgroundMenu.jpg')no-repeat;
-  background-size: cover;
-}
+
 main{
   margin-top: 3rem;
-  
+
 }
 main h2{
   font-size: 4rem;

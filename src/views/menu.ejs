@@ -10,10 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/menuAndPro.css">
+
+  <script src="/scripts/menu.js" defer></script>
   <title>Menu</title>
 </head>
-<body>
+<body class="bg">
   <%- include('parts/header')%>
   <main>
     <section class="container">
@@ -34,7 +36,30 @@
   
             <div class="actionsButton">
               <button class="addOrder">Carrinho</button>
-              <button class="deleteOrder">Delete</button>
+              
+            </div>
+          </div>
+        <%})%> 
+      </div>
+
+      <div class="titleCards">
+        <h2>BEBIDAS</h2>
+      </div>
+      <div class="cards">
+        <% bebidas.forEach((bebida) => {%>
+          
+          <div class="card" data-id="<%= bebida.id %>">
+            <div class="cardId"><%= bebida.id %></div>
+            <div class="cardName"><%= bebida.name %></div>
+            
+            <div class="cardAmount">
+              <p>Valor</p>
+              <p>R$ <%= bebida.amount.toFixed(2).replace('.',',') %></p>
+            </div>
+  
+            <div class="actionsButton">
+              <button class="addOrder">Carrinho</button>
+              
             </div>
           </div>
         <%})%> 

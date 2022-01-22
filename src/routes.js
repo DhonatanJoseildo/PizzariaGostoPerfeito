@@ -16,7 +16,7 @@ route.get('/registerPizza',(req, res) => res.render('registerPizza'));
 route.get('/home', (req, res) => res.render('home',profile = ""));
 route.get('/home/registerProfile', (req, res) => res.render('registerProfile',{message:''}));
 route.get('/home/menu', FrontController.index);
-route.get('/home/promotions', (req, res) => res.render('promotions'))
+route.get('/home/promotions', FrontController.promotion);
 route.get('/home/delivery', (req, res) => res.render('delivery'))
 
 route.post('/home', ProfileController.enter);
