@@ -39,7 +39,7 @@
 .content form label{
   margin-left: 2rem;
 }
-.content button.btCadPizza, .content a.cancel{
+.content button.btCadastro, .content a.cancel{
   font-size: 30px;
   padding: 7px;
   border-radius: 1rem;

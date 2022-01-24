@@ -34,7 +34,11 @@ main h2{
   text-align: center;
   box-shadow: 1px 1px 4px black;
 }
+.card.bebidas{
+  display: grid;
+  grid-template-columns: 5% 25% 15% 10%;
 
+}
 .card:hover {
   background: linear-gradient(90deg, rgba(250, 154, 45, 0.253) 0.45%,rgba(252, 253, 255, 0.1) 31.4%), white;
 }

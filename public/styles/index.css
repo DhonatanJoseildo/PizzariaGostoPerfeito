@@ -13,6 +13,9 @@ h1{
 .container h2{
   font-size: 3.5rem;
 }
+.contentCadastro .titleBebidas{
+  margin-top: 2rem;
+}
 /*=========== BUTTON / Link =============*/
 .contentCadastro{
   display: flex;
@@ -31,6 +34,28 @@ h1{
 }
 #registerPizza:hover{
   background-color: rgb(230, 230, 230);
+}
+.dropDown {
+  position: relative;
+  display: inline-block;
+}
+.dropDown-content{
+  display: none;
+  position: absolute;
+  min-width: 12rem;
+  padding: 12px 16px;
+  background: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+  border-radius: 0 0 .5rem .5rem;
+}
+.dropDown-content a{
+  text-decoration: none;
+  font-size: 2rem;
+}
+.dropDown:hover .dropDown-content{
+  display: block;
 }
 /*======= MODAL CADASTRO DE PIZZA==========*/
 

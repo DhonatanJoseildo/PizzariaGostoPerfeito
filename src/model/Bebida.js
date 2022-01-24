@@ -13,5 +13,26 @@ module.exports = {
       name: bebida.bebida,
       amount: bebida.amount
     }));
+  },
+  async create(newBebidas){
+    const db = await Database();
+
+    await db.run(`INSERT INTO bebidas(
+      bebida,
+      amount
+    )VALUES (
+      "${newBebidas.bebida}",
+      "${newBebidas.amount}"
+    )`);
+  },
+  async update(updateBebida, bebidaId){
+    const db = await Database();
+
+    await db.run(`UPDATE bebidas SET
+      bebida = "${updateBebida.bebida}",
+      amount = "${updateBebida.amount}"
+      WHERE id = ${bebidaId}
+    `)
+    await db.close();
   }
 }

@@ -19,7 +19,7 @@ module.exports = {
   },
 
   async create(newPizza){
-    const db = await Database()
+    const db = await Database();
 
     await db.run(`INSERT INTO pizzas (
       pizza,
@@ -35,7 +35,7 @@ module.exports = {
   },
 
   async update(updatePizza, pizzaId){
-    const db= await Database()
+    const db = await Database();
 
     await db.run(`UPDATE pizzas SET
       pizza = "${updatePizza.pizza}",
@@ -43,15 +43,15 @@ module.exports = {
       amount = "${updatePizza.amount}"
       WHERE id = ${pizzaId}
     `)
-    await db.close()
+    await db.close();
   },
   
   async delete(id){
     // abrindo o banco de dados
-    const db = await Database()
+    const db = await Database();
     // apagar um campo/ pizza da tabela pizzas
     await db.run(`DELETE FROM pizzas WHERE id = ${id}`)
 
-    await db.close()
+    await db.close();
   }
 }

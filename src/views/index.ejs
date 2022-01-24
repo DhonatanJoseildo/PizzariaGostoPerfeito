@@ -29,8 +29,23 @@
     <main>
       <section class="container">
         <div class="contentCadastro">
-          <h2>Cadastro de Pizza</h2>
-          <a id="registerPizza" href="/registerPizza">Cadastrar Pizza</a>
+          <h2>Pizzas Cadastrada</h2>
+          <div class="dropDown">
+            <a id="registerPizza" href="#">Cadastrar</a>
+            <div class="dropDown-content">
+
+              <div>
+                <a href="/registerPizza">Pizza</a>
+              </div>
+              <div>
+                <a href="/registerBebida">Bebidas</a>
+              </div>
+              <div>
+                <a href="#">Promotions</a>
+              </div>
+
+            </div>
+          </div>
         </div>
         <div class="cards">
           <!---------------- CARDS DA PAGINA ------------->
@@ -55,6 +70,30 @@
             </div>
           <%})%>
 
+        </div>
+        <div class="contentCadastro">
+          <h2 class="titleBebidas">Bebidas Cadastrada</h2>
+        </div>
+        <div class="cards bebidas">
+          <% bebidas.forEach((bebida) => { %>
+            <div class="card" data-id="<%= bebida.id %>">
+              <div class="cadastroId"><%= bebida.id %></div>
+
+              <div class="namePizza"><%= bebida.name %></div>
+              <div class="amount">
+                <p>Valor</p>
+                <p><%= bebida.amount.toFixed(2).replace('.',',') %></p>
+              </div>
+              <div class="actionsButtonRight">
+                <a href="/registerBebida/<%= bebida.id %>" class="edit pizza">
+                  <img src="/images/edit-pizza.svg" alt="Editar Pizza" />
+                </a>
+                <button class="delete pizza">
+                  <img src="/images/delete-pizza.svg" alt="Excluir Pizza" />
+                </button>
+              </div>
+            </div>
+          <%})%>
         </div>
       </section>
 

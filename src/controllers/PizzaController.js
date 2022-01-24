@@ -27,14 +27,14 @@ module.exports = {
   },
   
   async update(req, res){
-    const jobId = req.params.id
+    const pizzaId = req.params.id
     
     const updatePizza = {
       pizza: req.body["name-pizza"],
       ingredientes: req.body["name-ingredientes"],
       amount: req.body["name-valor"]
     }
-    await Pizza.update(updatePizza, jobId)
+    await Pizza.update(updatePizza, pizzaId)
     res.redirect('/')
   },
 

@@ -1,4 +1,3 @@
-const dataLocal = sessionStorage.getItem('pedidos')
 const button = document.querySelector('.actionsButton .addOrder')
 const cards = document.querySelectorAll('.cards .card')
 
@@ -17,9 +16,6 @@ for (let card of cards) {
       addPedido.innerHTML = 'Carrinho'
     }
 
-    sessionStorage.setItem('pedidos', addPedido.textContent);
-    console.log(sessionStorage.pedidos)
     
   })
-  addPedido.innerHTML = sessionStorage.getItem('pedidos')
 }

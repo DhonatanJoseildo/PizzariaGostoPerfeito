@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/creatAndEdit.css">
+  <title>Cadastrar Bebida</title>
+</head>
+
+<body>
+  <div class="bg">
+    <main>
+      <div class="container">
+        <div class="content">
+          <form action="/registerBebida" method="POST" id="form-bebida">
+            <fieldset>
+              <legend>Cadastrar Bebida</legend>
+
+              <div>
+                <label for="cadastroBebida">Nome da Bebida</label>
+                <input
+                  type="text"
+                  id="cadastroBebida"
+                  required
+                  name="name-bebida"
+                />
+              </div>
+
+              <div>
+                <label for="CadastroValor">Valor R$</label>
+                <input
+                  type="number"
+                  id="CadastroValor"
+                  step="any"
+                  required
+                  name="name-valor"
+                />
+              </div>
+              <div class="actionsButton">
+                <button class="btCadastro" type="submit">Cadastrar</button>
+                <a class="cancel" href="/">Cancelar</a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

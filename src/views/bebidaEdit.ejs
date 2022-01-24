@@ -7,37 +7,25 @@
 
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/styles/creatAndEdit.css">
-  <title>Editar Dados da Pizza</title>
+  <title>Atualizar Dados da Bebidas</title>
 </head>
 <body>
-  
   <main>
     <div class="container">
       <div class="content">
-        <form action="/registerPizza/<%= pizza.id %>" method="post">
+        <form action="/registerBebida/<%= bebida.id %>" method="post">
           <fieldset>
-            <legend>Atualizar Pizza</legend>
+            <legend>Atualizar Bebida</legend>
   
             <div>
-              <label for="cadastroPizza">Nome da Pizza</label>
+              <label for="cadastroBebida">Nome da Bebida</label>
               <input
                 type="text"
-                id="cadastroPizza"
+                id="cadastroBebida"
                 required
-                name="name-pizza"
-                value="<%= pizza.name %>"
+                name="name-bebida"
+                value="<%= bebida.name %>"
                 autofocus
-              />
-            </div>
-  
-            <div>
-              <label for="cadastroIngrediente">Ingredientes</label>
-              <input
-                type="text"
-                id="cadastroIngrediente"
-                required
-                name="name-ingredientes"
-                value="<%= pizza.ingredientes %>"
               />
             </div>
   
@@ -49,7 +37,7 @@
                 required
                 name="name-valor"
                 step="any"
-                value="<%= pizza.amount %>"
+                value="<%= bebida.amount %>"
               />
             </div>
             <div class="actionsButton">
@@ -61,6 +49,5 @@
       </div>
     </div>
   </main>
-      
 </body>
 </html>
