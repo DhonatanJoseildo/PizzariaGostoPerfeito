@@ -14,9 +14,13 @@ main h2{
 }
 .cards{
   display: grid;
-  grid-template-columns: 45% 45%;
-  justify-content: space-evenly;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
   justify-items: stretch;
+}
+.cards.bebidas{
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
 }
 .card {
   display: grid;
@@ -35,9 +39,8 @@ main h2{
   box-shadow: 1px 1px 4px black;
 }
 .card.bebidas{
-  display: grid;
-  grid-template-columns: 5% 25% 15% 10%;
-
+  grid-template-columns: 10% 45% 25% 20%;
+  padding: 2.4rem 1rem;
 }
 .card:hover {
   background: linear-gradient(90deg, rgba(250, 154, 45, 0.253) 0.45%,rgba(252, 253, 255, 0.1) 31.4%), white;
@@ -67,8 +70,37 @@ main h2{
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .cards{
     grid-template-columns: 100%;
+  }
+  .cards.bebidas{
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards.bebidas{
+    grid-template-columns: 100%;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  header .containerHeader{
+    height: auto;
+    background: none;
+    box-shadow: none;
+  }
+  header .containerHeader .menu{
+    flex-direction: column;
+  }
+  .containerHeader .menu a{
+    width: 100%;
+    background: var(--background-home);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+  }
+  header #logo{
+    font-size: 6rem;
   }
 }

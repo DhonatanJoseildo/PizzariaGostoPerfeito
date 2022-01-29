@@ -1,5 +1,9 @@
 /*=========== CARDS ===========*/
-
+.cards.bebidas{
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
 .card {
   display: grid;
   grid-template-columns: 5% 25% 45% 15% 10%;
@@ -15,7 +19,9 @@
   padding: 2.4rem;
   text-align: left;
 }
-
+.card.bebida{
+  grid-template-columns: 10% 50% 25% 15%;
+}
 .card:hover {
   background: linear-gradient(90deg, rgba(250, 154, 45, 0.253) 0.45%,rgba(252, 253, 255, 0.1) 31.4%), white;
 }
@@ -49,7 +55,7 @@
 .namePizza, .nameIngredientes{
   font-family: IBM Plex Sans;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 3.4rem;
 }
 .actionsButtonRight a img, .actionsButtonRight button img{
@@ -65,4 +71,32 @@
 }
 .actionsButtonRight a{
   margin-right: .5rem;
+}
+
+/*============= Media ===============*/
+
+@media only screen and (max-width: 992px) {
+
+  .nameIngredientes {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .namePizza, .amount p, .cadastroId{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards.bebidas {
+    grid-template-columns: 100%;
+  }
+  .nameIngredientes {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .namePizza, .amount p, .cadastroId{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }

@@ -34,5 +34,13 @@ module.exports = {
       WHERE id = ${bebidaId}
     `)
     await db.close();
+  },
+  async delete(id){
+    // abrindo o banco de dados
+    const db = await Database();
+    // apagar um campo/ pizza da tabela pizzas
+    await db.run(`DELETE FROM bebidas WHERE id = ${id}`)
+
+    await db.close();
   }
 }

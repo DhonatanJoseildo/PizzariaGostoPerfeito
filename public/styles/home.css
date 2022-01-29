@@ -106,20 +106,21 @@ header .logo #logo{
 /*========= Media ============*/
 
 @media only screen and (max-width: 992px) {
-
-}
-
-@media only screen and (max-width: 768px){
   body section{
     position: static;
     margin-top: 20%;
   }
 }
 
+@media only screen and (max-width: 768px){
+  
+}
+
 @media only screen and (max-width: 600px) {
   header .containerHeader{
     height: auto;
     background: none;
+    box-shadow: none;
   }
   header .containerHeader .menu{
     flex-direction: column;
@@ -133,4 +134,5 @@ header .logo #logo{
   header #logo{
     font-size: 6rem;
   }
+
 }

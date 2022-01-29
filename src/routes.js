@@ -18,12 +18,13 @@ route.get('/registerBebida', (req, res) => res.render('registerBebida'));
 route.post('/registerBebida', BebidaController.save);
 route.get('/registerBebida/:id', BebidaController.show);
 route.post('/registerBebida/:id', BebidaController.update);
+route.post('/bebida/delete/:id', BebidaController.delete);
 
 route.get('/home', (req, res) => res.render('home',profile = ""));
 route.get('/home/registerProfile', (req, res) => res.render('registerProfile',{message:''}));
 route.get('/home/menu', FrontController.index);
 route.get('/home/promotions', FrontController.promotion);
-route.get('/home/delivery', (req, res) => res.render('delivery'))
+route.get('/home/delivery', (req, res) => res.render('delivery'));
 
 route.post('/home', ProfileController.enter);
 route.post('/home/registerProfile', ProfileController.save);

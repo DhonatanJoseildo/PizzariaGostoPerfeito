@@ -76,7 +76,7 @@
         </div>
         <div class="cards bebidas">
           <% bebidas.forEach((bebida) => { %>
-            <div class="card" data-id="<%= bebida.id %>">
+            <div class="card bebida" data-id="<%= bebida.id %>">
               <div class="cadastroId"><%= bebida.id %></div>
 
               <div class="namePizza"><%= bebida.name %></div>
@@ -101,18 +101,19 @@
       <div class="bgModal">
         <div class="containerModal">
           <div class="contentModal">
-            <h3>Excluir Pizza</h3>
+            <h3 class="titleDelete">Excluir Pizza</h3>
+            <p class="pDelete">
+              Quer mesmo excluir essa pizza?
+            </p>
             <p>
-              Quer mesmo excluir essa pizza? <br />
               Ela será apagado para sempre.
             </p>
-
             <p></p>
 
             <button class="deletePizza" type="submit" form="delete-pizza">
               Excluir Pizza
             </button>
-            <a href="/" class="cancelDelete">Cancelar</a>
+            <button class="cancelDelete">Cancelar</button>
 
             <form
               action="/registerPizza/delete"
@@ -122,6 +123,7 @@
           </div>
         </div>
       </div>
+      
     </main>
   </body>
 </html>

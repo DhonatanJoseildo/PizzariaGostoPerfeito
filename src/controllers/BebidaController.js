@@ -33,5 +33,11 @@ module.exports = {
     }
     await Bebida.update(updateBebida, bebidaId);
     res.redirect('/')
+  },
+  async delete(req, res){
+    const bebidaId = req.params.id
+
+    await Bebida.delete(bebidaId)
+    return res.redirect('/')
   }
 }

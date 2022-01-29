@@ -21,11 +21,10 @@
   justify-content: center;
 }
 .content form fieldset{
-  width: 80%;
-  height: 80%;
   border-radius: 1rem;
   text-align: left;
   background: rgb(250, 248, 224);
+  padding: 1rem;
 }
 .content form legend{
   font-size: 4rem;
@@ -59,4 +58,3 @@
 .content a.cancel{
   text-decoration: none;
 }
-

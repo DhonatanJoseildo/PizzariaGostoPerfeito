@@ -1,6 +1,6 @@
 export default function Modal() {
   const modal = document.querySelector('.bgModal')
-  const cancelButton = document.querySelector('a.cancelDelete')
+  const cancelButton = document.querySelector('button.cancelDelete')
 
   cancelButton.addEventListener('click', closeModal)
 

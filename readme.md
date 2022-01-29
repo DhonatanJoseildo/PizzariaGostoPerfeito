@@ -10,8 +10,10 @@
 - banco de dados SQLITE
 
 ## Estado atual de desenvolvimento 
-- Pagina html em fase de contrução
-- CSS em implementação
+- Pagina html front-end [x]
+- Pagina html administrativa [x]
+- CSS 90% completo.
+- javascript 80% completo.
 
 ## Update 1.0.1
 - implementado abertura da modal para cadastro de pizza.
@@ -78,3 +80,7 @@
 - Criado a pagina de menu.
 - criado a pagina de promoção.
 - criado parts/header para melhor usabilidade.
+
+## Update 1.2.5
+- Criada todas paginas do sistema
+- Feita parte responsiva

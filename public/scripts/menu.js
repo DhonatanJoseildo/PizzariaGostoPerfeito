@@ -7,10 +7,8 @@ for (let card of cards) {
   const addPedido = card.querySelector('button.addOrder')
   
   addPedido.addEventListener('click',() => {
-    console.log(addPedido)
-    console.log(cardId)
     if (addPedido.textContent === 'Carrinho') {
-      addPedido.innerHTML = 'Delete'
+      addPedido.innerHTML = 'Remover'
       
     }else{
       addPedido.innerHTML = 'Carrinho'
