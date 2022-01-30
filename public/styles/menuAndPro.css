@@ -69,6 +69,12 @@ main h2{
 .card .cardIngrediente{
   font-size: 1.5rem;
 }
+/*============ Button cards ==========*/
+button.addOrder{
+  width: 3rem;
+}
+
+/*========= Media ================*/
 
 @media only screen and (max-width: 992px) {
   .cards{
