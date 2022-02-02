@@ -12,6 +12,19 @@ main h2{
   width: min(1440px, 90vw);
   margin: auto;
 }
+.buttonCart{
+  text-align: end;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.buttonCart button{
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+  cursor: pointer;
+}
 .cards{
   display: grid;
   grid-template-columns: 48% 48%;
@@ -69,6 +82,62 @@ main h2{
 .card .cardIngrediente{
   font-size: 1.5rem;
 }
+
+/*=============== Modal ==============*/
+
+.bgModal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  display: none;
+}
+.bgModal .containerModal{
+  background: white;
+  position: relative;
+  min-width: 40rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+}
+.containerModal h3{
+  font-size: 3.5rem;
+}
+.containerModal .containerPedidos p, .containerPedidos div{
+  font-size: 2rem;
+}
+.containerPedidos .pedido{
+  display: grid;
+  grid-template-columns: 15% 40% 30% 15%;
+  align-items: center;
+  justify-content: center;
+}
+.pedido{
+  border: 1px solid gray;
+  max-width: 90%;
+  margin: auto;
+}
+.pedido .theQuantities input{
+  max-width: 4rem;
+  text-align: center;
+}
+.actionsCart {
+  position: absolute;
+  bottom: 10px;
+  
+}
+.actionsCart #finishPurchase, .actionsCart .cancelCart{
+  font-size: 2rem;
+  border: 1px solid gray;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+
 /*============ Button cards ==========*/
 button.addOrder{
   width: 3rem;
