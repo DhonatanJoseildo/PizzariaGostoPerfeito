@@ -1,6 +1,5 @@
 const button = document.querySelector('.actionsButton .addOrder')
 const cards = document.querySelectorAll('.cards .card')
-const appStorage = sessionStorage.getItem('carts')
 
 for (let card of cards) {
   const cardId = card.dataset.id

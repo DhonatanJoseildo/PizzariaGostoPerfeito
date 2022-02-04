@@ -128,19 +128,21 @@ main h2{
 .actionsCart {
   position: absolute;
   bottom: 10px;
-  
+  right: 60px;
 }
 .actionsCart #finishPurchase, .actionsCart .cancelCart{
   font-size: 2rem;
   border: 1px solid gray;
   border-radius: .5rem;
   padding: 1rem;
+  cursor: pointer;
 }
 
 
 /*============ Button cards ==========*/
 button.addOrder{
   width: 3rem;
+  cursor: pointer;
 }
 
 /*========= Media ================*/
