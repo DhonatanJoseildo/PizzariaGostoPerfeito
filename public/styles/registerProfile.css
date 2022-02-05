@@ -1,8 +1,13 @@
+body{
+  background-color: bisque;
+}
+
 main{
   width: 100vw;
   height: 100vh;
   display: flex;
-  background: var(--background-home);
+  background: url('/images/backgroundAdmin.svg');
+
 }
 
 .container{

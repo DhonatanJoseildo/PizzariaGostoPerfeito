@@ -1,0 +1,34 @@
+<div class="bgModal">
+  <div class="containerModal">
+    <h3>Pedidos</h3>
+    <div class="containerPedidos">
+      <div class="pedido">
+
+        <div class="theQuantities">
+          <label for="quantities">Unidade</label>
+          <input type="number" id="quantities" value="1" maxlength="2">
+        </div>
+        <div class="nameProduct">
+          <p class="typeProd">Pizza</p>
+          <p class="product">---------</p>
+        </div>
+        <div class="amountProduct">
+          <P>Valor</P>
+          <p class="amount">---------</p>
+        </div>
+        <div class="removeProduct">
+          <img src="/images/delete-pizza.svg" alt="Remover pizza do carrinho">
+        </div>
+
+      </div>
+      <div class="actionsCart">
+        <button id="finishPurchase">
+          Finalizar Compra
+        </button>
+        <button class="cancelCart" onclick="closeCart()">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

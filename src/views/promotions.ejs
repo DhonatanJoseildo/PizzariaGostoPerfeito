@@ -16,9 +16,14 @@
   <title>Promotions</title>
 </head>
 <body class="bg">
+<!--------------- Header part -------------->
   <%- include('parts/header')%>
   <main>
     <section class="container">
+      <div class="buttonCart">
+        <button type="button" class="openCart" onclick="openCart()">Carrinho</button>
+      </div>
+<!-------------------- Cards ------------------->
       <div class="titleCards">
         <h2>Promoções da semana</h2>
       </div>
@@ -31,7 +36,7 @@
             <div class="cardIngrediente"><%= pizza.ingredientes %></div>
             <div class="cardAmount">
               <p>Valor</p>
-              <p>R$ <%= pizza.amount.toFixed(2).replace('.',',') %></p>
+              <p class="amount">R$ <%= pizza.amount.toFixed(2).replace('.',',') %></p>
             </div>
   
             <div class="actionsButton">
@@ -43,6 +48,8 @@
         <%})%> 
       </div>
     </section>
+    <!-------------- Modal cart --------->
+    <%- include('parts/cart')%>
   </main>
 </body>
 </html>
